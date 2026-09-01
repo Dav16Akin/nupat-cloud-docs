@@ -1,4 +1,4 @@
-import { createMDX } from 'fumadocs-mdx/next';
+import { createMDX } from "fumadocs-mdx/next";
 
 const withMDX = createMDX();
 
@@ -8,9 +8,9 @@ const config = {
   async redirects() {
     return [
       {
-        source: '/',
-        destination: '/docs',
-        permanent: false,
+        source: "/",
+        destination: "/docs",
+        permanent: true,
       },
     ];
   },
