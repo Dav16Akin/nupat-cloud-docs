@@ -1,0 +1,21 @@
+---
+title: Enforcing HTTPS Redirection
+description: How to force all HTTP traffic to HTTPS via cPanel or .htaccess.
+---
+
+# Enforcing HTTPS Redirection
+
+## Method 1: cPanel Toggle (Easiest)
+
+1. In cPanel, navigate to **Domains** > **Domains**.
+2. Locate your domain.
+3. Toggle the **Force HTTPS Redirect** switch to **ON**.
+
+## Method 2: `.htaccess` Rewrite Rule
+
+Add the following rule to your `public_html/.htaccess` file:
+```apache
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+```

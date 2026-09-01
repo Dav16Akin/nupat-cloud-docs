@@ -1,0 +1,10 @@
+{
+  "title": "Web Hosting & cPanel",
+  "pages": [
+    "cpanel-access",
+    "wordpress-install",
+    "email-accounts",
+    "databases",
+    "php-versions"
+  ]
+}

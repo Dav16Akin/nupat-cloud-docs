@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import "fumadocs-ui/style.css";
+
+:root {
+  --color-fd-primary: #1787d4;
+  --color-fd-accent: #ffc75d;
+}
+
+.dark {
+  --color-fd-background: #06080d;
+  --color-fd-card: #0a0e17;
+  --color-fd-border: #1e293b;
+}

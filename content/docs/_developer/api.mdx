@@ -1,0 +1,26 @@
+---
+title: REST API Reference
+description: Overview of the Nupat Cloud backend APIs for hosting, orders, and domains.
+---
+
+# REST API Reference
+
+Nupat Cloud provides a secure REST API for programmatic provisioning.
+
+## Base URL
+```
+https://cloud-backend-chi.vercel.app/api
+```
+
+## Authentication
+Include your Bearer token in the `Authorization` header:
+```http
+Authorization: Bearer <your_access_token>
+```
+
+## Core Endpoints
+- `GET /plans` — List all active hosting tiers
+- `POST /domains/search?term=yourdomain.com` — Query domain registry availability
+- `POST /orders/initialize` — Create checkout sessions
+- `GET /hosting` — Retrieve provisioned cPanel accounts
+- `GET /hosting/:id/cpanel-login` — Generate 1-time session link for cPanel

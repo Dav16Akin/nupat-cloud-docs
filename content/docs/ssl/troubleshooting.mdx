@@ -1,0 +1,19 @@
+---
+title: Troubleshooting SSL Certificates
+description: Resolving SSL mismatch, pending verification, or untrusted certificate warnings.
+---
+
+# Troubleshooting SSL Certificates
+
+## Issue: "Your connection is not private" (SSL Pending)
+
+**Cause**: The domain was recently registered or DNS was just updated.
+**Solution**:
+- Ensure your nameservers point to `ns1.nupatcloud.com` and `ns2.nupatcloud.com`.
+- In cPanel, go to **SSL/TLS Status** and click **Run AutoSSL**.
+
+## Issue: Mixed Content Warnings
+
+**Cause**: Some images, scripts, or CSS files on your website are hardcoded with `http://` instead of `https://`.
+**Solution**:
+- If using WordPress, install the **Really Simple SSL** plugin or update site URLs in **Settings** > **General**.

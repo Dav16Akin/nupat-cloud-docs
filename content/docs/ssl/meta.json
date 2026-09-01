@@ -1,0 +1,8 @@
+{
+  "title": "SSL & Security",
+  "pages": [
+    "automated-ssl",
+    "https-redirection",
+    "troubleshooting"
+  ]
+}
